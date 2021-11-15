@@ -6,6 +6,7 @@ import Settings from "./pages/settings/Settings";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from "react";
 
 function App() {
   const currentUser = true;
@@ -33,6 +34,18 @@ function App() {
       </Switch>
     </Router>
   );
+}
+
+class connectionExample extends React.Component{
+  componentDidMount(){
+    const apiUrl = `http://127.0.0.1:8000/api/`;
+		fetch(apiUrl)
+			.then((response) => response.json())
+			.then((data) => console.log(data))
+  }
+  render(){
+    return <div>Example connection</div>
+  }
 }
 
 export default App;
