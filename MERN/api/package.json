@@ -3,6 +3,7 @@
     "bcrypt": "^5.0.1",
     "dotenv": "^9.0.2",
     "express": "^4.17.1",
+    "mongodb": "^4.2.1",
     "mongoose": "^5.13.13",
     "multer": "^1.4.3",
     "nodemon": "^2.0.15",
